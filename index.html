@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Google Sheets</title>
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/css2.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content content-width">
+        <img src="/img/Logo.png" alt="Logo" class="header__logo" />
+        <h2 class="header__heading">
+          ¡APRESÚRESE! PARA EL DÍA DE HOY, POCA UNIDADES EN PROMOCIÓN
+        </h2>
+      </div>
+    </header>
+
+    <section class="cream">
+      <div class="cream__content content-width">
+        <h1 class="cream__heading">
+          CREMA REJUVENECIENTE
+          <a href="#dataForm2" class="order-link">LifeTone</a>: EL CAMINO A UNA
+          PIEL PERFECTA
+        </h1>
+        <div class="cream__product product-bg-container">
+          <div class="product-bg"></div>
+          <img src="/img/cream-image.png" alt="LifeTone" class="cream__image" />
+        </div>
+        <form
+          id="dataForm2"
+          name="dataForm2"
+          class="form cream__form"
+          action="/submit"
+          method="POST"
+        >
+          <img src="/img/discount.png" alt="discount" class="form__discount" />
+          <div class="form__header">
+            <p class="form__header-text">DESCUENTO DEL 50% EN SU PEDIDO</p>
+          </div>
+          <div class="form__content">
+            <div class="price">
+              <p class="price__old">
+                <span class="price__old--description">Precio original: </span>
+                <span
+                  class="price__old--value oldPriceAndLabelForLandingInfoApi"
+                  >78 USD</span
+                >
+              </p>
+              <p class="price__new">
+                <span class="price__new--description"
+                  >Precio con descuento:
+                </span>
+                <span class="price__new--value priceAndLabelForLandingInfoApi"
+                  >39 USD</span
+                >
+              </p>
+            </div>
+            <label for="">POR EJEMPLO: MARÍA LOPEZ </label>
+            <input
+              class="form__input"
+              id="name2"
+              name="name"
+              required
+              placeholder="Nombre"
+              type="text"
+            />
+            <label for="">POR EJEMPLO: +593 933 543 342 </label>
+            <input
+              class="form__input"
+              id="phone2"
+              name="phone"
+              placeholder="Número de teléfono"
+              required
+              type="tel"
+            />
+            <button type="submit" class="form__btn btn">HACER UN PEDIDO</button>
+          </div>
+          <div class="form__footer">
+            <p class="days">dias restantes</p>
+          <div class="timer">
+            <div class="time-container">
+              <span class="hour">
+                <span class="num hour0">-</span>
+                <span class="num hour1">-</span>
+              </span>
+              <span class="time-text">horas</span>
+            </div>
+            :
+            <div class="time-container">
+              <span class="minute">
+                <span class="num min0">-</span>
+                <span class="num min1">-</span>
+              </span>
+              <span class="time-text">minutos</span>
+            </div>
+            :
+            <div class="time-container">
+              <span class="second">
+                <span class="num sec0">-</span>
+                <span class="num sec1">-</span>
+              </span>
+              <span class="time-text">segundos</span>
+            </div>
+          </div>
+        </div>     
+        </form>
+        <div>
+          <img
+            class="cream__decoration cream__decoration--1"
+            src="/img/cream-bg-1.png"
+            alt="water"
+          />
+          <img
+            class="cream__decoration cream__decoration--2"
+            src="/img/cream-bg-2.png"
+            alt="water"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="action">
+      <div class="action__content content-width">
+        <h2 class="action__heading">
+          CÓMO FUNCIONA <a href="#dataForm">LifeTone</a>
+        </h2>
+        <ul class="action__list">
+          <li class="action__item">
+            <p>Puede ayudar a igualar el tono y la textura de la piel.</p>
+          </li>
+          <li class="action__item">
+            <p>Puede ayudar a combatir las manchas de la edad.</p>
+          </li>
+          <li class="action__item">
+            <p>
+              Protege contra los efectos nocivos de la radiación ultravioleta.
+            </p>
+          </li>
+          <li class="action__item">
+            <p>Puede ayudar a mejorar el tono y la elasticidad de la piel.</p>
+          </li>
+          <li class="action__item">
+            <p>Puede ayudar a reducir la profundidad y el número de arrugas.</p>
+          </li>
+          <li class="action__item">
+            <p>Puede ayudar a hidratar profundamente la piel.</p>
+          </li>
+          <li class="action__item">
+            <p>Puede ayudar a combatir el acné.</p>
+          </li>
+          <li class="action__item">
+            <p>Puede ayudar a nutrir intensamente las células de la piel.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="changes">
+      <div class="changes__content content-width">
+        <div class="changes__container">
+          <h2 class="changes__heading border-heading">
+            QUÉ CAMBIOS OCURRIRÁN DESPUÉS DE COMENZAR A USAR LifeTone
+          </h2>
+          <ul class="changes__list">
+            <li class="changes__item">
+              Después de la primera aplicación, usted sentirá cómo la piel se ha
+              hidratado y descansado. Los componentes de la crema brindarán una
+              protección confiable a su piel contra los daños causados ​​por los
+              rayos UV, manteniendo su frescura y apariencia saludable.
+            </li>
+            <li class="changes__item">
+              Después de 7 días de uso de la crema, usted notará que el color y
+              la textura de su rostro se han vuelto más uniformes. Los
+              ingredientes activos en esta etapa también actúan sobre las
+              arrugas, haciéndolas gradualmente menos visibles.
+            </li>
+            <li class="changes__item">
+              Después de 6 semanas de uso de la crema: después del ciclo de
+              <a href="#dataForm" class="order-link">LifeTone</a>, su piel
+              estará suave e hidratada, las arrugas se suavizarán y
+              desaparecerán los rastros de acné.
+            </li>
+          </ul>
+          <div class="changes__steps">
+            <div class="changes__step">
+              <img src="/img/step1.png" alt="step1" class="changes__step" />
+            </div>
+            <img src="/img/arrow-right.png" alt="arrow-right" />
+            <div class="changes__step">
+              <img src="/img/step2.png" alt="step2" class="changes__step" />
+            </div>
+            <img src="/img/arrow-right.png" alt="arrow-right" />
+            <div class="changes__step">
+              <img src="/img/step3.png" alt="step3" class="changes__step" />
+            </div>
+          </div>
+        </div>
+        <img src="/img/changes-bg.png" alt="woman" class="changes__bg-image" />
+      </div>
+    </section>
+
+    <section class="effects">
+      <div class="effects__content content-width">
+        <h2 class="effects__heading border-heading">
+          ACCIÓN DE <a href="#dataForm">LifeTone</a>
+        </h2>
+        <div class="effects__product product-bg-container">
+          <div class="product-bg"></div>
+          <img
+            src="/img/effects-image.png"
+            alt="LifeTone"
+            class="effects__image"
+          />
+        </div>
+        <ul class="effects__list">
+          <li class="effects__item">
+            <span class="effects__item--title">– 1.</span>
+            <p class="effects__item--text">
+              Puede ayudar a hidratar y nutrir la piel con microelementos
+              beneficiosos
+            </p>
+          </li>
+          <li class="effects__item">
+            <span class="effects__item--title">– 2.</span>
+            <p class="effects__item--text">
+              Puede ayudar a reducir la pigmentación de la piel, suprimiendo la
+              síntesis de melanina
+            </p>
+          </li>
+          <li class="effects__item">
+            <span class="effects__item--title">– 3.</span>
+            <p class="effects__item--text">
+              Protege contra los rayos UVA / UVB, proporcionando una barrera
+              confiable para la piel
+            </p>
+          </li>
+          <li class="effects__item">
+            <span class="effects__item--title">– 4.</span>
+            <p class="effects__item--text">
+              Mantiene el tono y la elasticidad de la piel, combatiendo los
+              signos de envejecimiento y previniendo la pérdida de firmeza
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="components">
+      <div class="components__content content-width">
+        <h2 class="components__heading border-heading">
+          LOS PRINCIPALES COMPONENTES DE LA CREMA
+        </h2>
+        <ul class="components__list">
+          <li class="component">
+            <img
+              src="/img/comp1.jpg"
+              alt="NIACINAMIDA"
+              class="component__image"
+            />
+            <div class="component__content">
+              <h3 class="component__heading">NIACINAMIDA</h3>
+              <p class="component__text">
+                Puede reducir la rugosidad, haciendo que la piel sea más
+                uniforme y suave, previniendo la descamación de la piel.
+              </p>
+            </div>
+          </li>
+          <li class="component">
+            <img src="/img/comp2.jpg" alt="RETINOL" class="component__image" />
+            <div class="component__content">
+              <h3 class="component__heading">RETINOL</h3>
+              <p class="component__text">
+                Contribuye a la hidratación de la piel, haciéndola más suave y
+                lisa. También puede ayudar a reducir la pigmentación.
+              </p>
+            </div>
+          </li>
+          <li class="component">
+            <img
+              src="/img/comp3.jpg"
+              alt="ÁCIDO HIALURÓNICO"
+              class="component__image"
+            />
+            <div class="component__content">
+              <h3 class="component__heading">ÁCIDO HIALURÓNICO</h3>
+              <p class="component__text">
+                Puede ayudar a igualar la textura de la piel. También hace que
+                el tono de la piel sea más uniforme.
+              </p>
+            </div>
+          </li>
+          <li class="component">
+            <img src="/img/comp4.jpg" alt="COLÁGENO" class="component__image" />
+            <div class="component__content">
+              <h3 class="component__heading">COLÁGENO</h3>
+              <p class="component__text">
+                Protege la piel de los dañinos factores ambientales y así puede
+                ayudar a combatir los signos del envejecimiento.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="shine">
+      <div class="shine__content content-width">
+        <h2 class="shine__heading border-heading">
+          ¡BRILLO COMPLETO - ABSOLUTAMENTE SEGURO!
+        </h2>
+        <div class="shine__container">
+          <div class="shine__left">
+            <img src="/img/shine-image.png" alt="woman" class="shine__image" />
+            <div class="shine__list">
+              <h3 class="shine__item">100% COMPOSICIÓN NATURAL</h3>
+              <h3 class="shine__item">EFICACIA COMPROBADA</h3>
+              <h3 class="shine__item">HIPOALERGÉNICO</h3>
+            </div>
+          </div>
+          <div class="shine__right">
+            <p class="shine__text">
+              LifeTone puede lograr un impresionante efecto gracias a su fórmula
+              bien desarrollada, que combina ingredientes naturales que hidratan
+              intensamente y exfolian suavemente la piel.
+            </p>
+            <div class="shine__accent">
+              <p>
+                OLN ha reconocido que LifeTone es un producto completamente
+                seguro y eficaz para rejuvenecer la piel.
+              </p>
+            </div>
+            <h3 class="shine__bold">
+              La Oficina de Normas de América Latina (OLN) y el Centro de
+              Justicia Ambiental y Desarrollo en Ecuador realizaron una
+              investigación y descubrieron que la mayoría de los productos
+              rejuvenecedores en el mercado contienen sustancias dañinas
+              prohibidas, como mercurio e hidroquinona, que provocan erupciones,
+              hinchazón, enrojecimiento, debilidad, dolores óseos y cambios en
+              el color de la piel.
+            </h3>
+            <a href="#dataForm" class="shine__btn btn">HACER UN PEDIDO</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="order">
+      <div class="order__content content-width">
+        <div class="order__container">
+          <p class="order__heading">LifeTone</p>
+          <h2>HAGA SU PEDIDO A TRAVÉS DEL FORMULARIO DE PEDIDO</h2>
+          <p>
+            <b>
+              Además, al realizar su pedido a través de este formulario hasta el
+              <span class="day-0"></span>, ¡recibirá un descuento del 50%!</b
+            >
+          </p>
+          <p>
+            Para realizar un pedido, complete el formulario especial: ingrese su
+            nombre y número de teléfono en los campos de solicitud. Después de
+            eso, un consultor se pondrá en contacto con usted. También puede
+            discutir cualquier otra pregunta con el consultor. El pedido será
+            entregado por un mensajero en un plazo de 3 a 5 días. Pago
+            contraentrega.
+          </p>
+          <h2>
+            No espere a que su piel brille. Pruebe LifeTone y descubra el camino
+            hacia una piel perfecta hoy mismo.
+          </h2>
+        </div>
+        <img src="/img/order-bg.jpg" alt="woman" class="order__image" />
+      </div>
+    </section>
+
+    <section class="use">
+      <div class="use__content content-width">
+        <div class="use__left">
+          <h1 class="use__heading">
+            LifeTone: REJUVENECIMIENTO, HIDRATACIÓN, PROTECCIÓN, BRILLO
+          </h1>
+          <h2 class="use__heading-2">EN 6 SEMANAS DE USO USTED OBTENDRÁ:</h2>
+          <div class="use__list">
+            <h3 class="use__item">Una piel intensamente hidratada</h3>
+            <h3 class="use__item">Eliminación de arrugas finas</h3>
+            <h3 class="use__item">Protección contra los daños del entorno</h3>
+            <h3 class="use__item">Eliminación del acné</h3>
+            <h3 class="use__item">Brillo y tono de piel uniforme</h3>
+            <h3 class="use__item">Nutrición profunda de la piel</h3>
+          </div>
+          <a href="#dataForm" class="use__btn btn">HACER UN PEDIDO</a>
+        </div>
+        <div class="use__right">
+          <img src="/img/use-image.png" alt="LifeTone" class="use__image" />
+        </div>
+      </div>
+      <div>
+        <img
+          class="use__decoration use__decoration--1"
+          src="/img/cream-bg-1.png"
+          alt="water"
+        />
+        <img
+          class="use__decoration use__decoration--2"
+          src="/img/cream-bg-2.png"
+          alt="water"
+        />
+      </div>
+    </section>
+    <!--id="dataForm"-->
+    <footer class="footer">
+      <div class="footer__content content-width">
+        <form
+          id="dataForm"
+          name="dataForm"
+          class="form cream__form"
+          action="/submit"
+          method="POST"
+        >
+          <img src="/img/discount.png" alt="discount" class="form__discount" />
+          <div class="form__header">
+            <p class="form__header-text">DESCUENTO DEL 50% EN SU PEDIDO</p>
+          </div>
+          <div class="form__content">
+            <div class="price">
+              <p class="price__old">
+                <span class="price__old--description">Precio original: </span>
+                <span
+                  class="price__old--value oldPriceAndLabelForLandingInfoApi"
+                  >78 USD</span
+                >
+              </p>
+              <p class="price__new">
+                <span class="price__new--description"
+                  >Precio con descuento:
+                </span>
+                <span class="price__new--value priceAndLabelForLandingInfoApi"
+                  >39 USD</span
+                >
+              </p>
+            </div>
+            <label for="">POR EJEMPLO: MARÍA LOPEZ</label>
+            <input
+              class="form__input"
+              id="name"
+              name="name"
+              required
+              placeholder="Nombre"
+              type="text"
+            />
+
+            <label for="">POR EJEMPLO: +593 933 543 342 </label>
+            <input
+              class="form__input"
+              id="phone"
+              name="phone"
+              placeholder="Número de teléfono"
+              required
+              type="tel"
+            />
+
+            <button type="submit" class="form__btn btn">HACER UN PEDIDO</button>
+          </div>
+        </form>
+        <center>
+          <div class="footer__links">
+            <div>
+              QUITO-ECUADOR, Distribuidor único para Ecuador(C)(P) <br />
+              <a
+                href="policy.html"
+                class="policy"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Politica de privacidad</a
+              >
+            </div>
+          </div>
+        </center>
+      </div>
+    </footer>
+
+    <style>
+      html,
+      body {
+        scroll-behavior: smooth !important;
+      }
+    </style>
+    <style>
+      .feedback {
+        width: 75px;
+        height: 70px;
+        position: fixed;
+        right: -15px;
+        top: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #039aae;
+        border-top-left-radius: 35px;
+        border-bottom-left-radius: 35px;
+        cursor: pointer;
+        z-index: 1000;
+        box-shadow: -2px 3px 11px rgb(0 0 0 / 30%);
+        transition: all 0.5s;
+      }
+      .feedback:hover {
+        right: 0;
+      }
+      .feedback img {
+        width: 50px;
+        height: 50px;
+      }
+      .popup-window {
+        font-family: sans-serif;
+        font-family: inherit;
+        display: none;
+        width: 300px;
+        position: fixed;
+        right: 0;
+        top: 15%;
+        padding: 35px 10px;
+        background: #fff;
+        border-radius: 5px 0 0 5px;
+        z-index: 2000;
+        box-shadow: -2px 3px 11px rgb(0 0 0 / 17%);
+      }
+      .popup-window form {
+        width: 100%;
+        min-height: auto;
+        padding: 0;
+        background: inherit;
+        box-shadow: none;
+        height: auto;
+      }
+      .popup-window label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: #333;
+        text-transform: uppercase;
+      }
+      .popup-window input {
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: none;
+        font-family: inherit;
+        font-size: 16px;
+        margin-bottom: 15px;
+        border: 1px solid #333;
+      }
+      .popup-window input::placeholder {
+        font-size: 16px;
+      }
+      .popup-window button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background: #039aae;
+        color: #ffffff;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 15px;
+        border-radius: 20px;
+      }
+      .close-popup {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        width: 27px;
+        height: 27px;
+        background-color: #fff;
+        cursor: pointer;
+      }
+      .close-popup:before {
+        content: "";
+        background: #333;
+        width: 20px;
+        height: 1px;
+        position: absolute;
+        top: 13px;
+        left: 4px;
+        transform: rotate(-45deg);
+      }
+      .close-popup:after {
+        content: "";
+        background: #333;
+        width: 20px;
+        height: 1px;
+        position: absolute;
+        top: 13px;
+        left: 4px;
+        transform: rotate(45deg);
+      }
+      @media screen and (max-width: 576px) {
+        .feedback {
+          top: 35%;
+        }
+        .popup-window {
+          top: 35%;
+        }
+      }
+    </style>
+    <div class="feedback"><img src="img/form-ico.png" alt="" /></div>
+    <div class="popup-window" style="display: none">
+      <div class="close-popup"></div>
+      <form
+        id="dataForm3"
+        name="dataForm3"
+        class="form cream__form"
+        action="/submit"
+        method="POST"
+      >
+        <label for="name2">POR EJEMPLO: MARÍA LOPEZ</label>
+        <input
+          id="name3"
+          type="text"
+          name="name"
+          placeholder="Alejandro Rodriguez"
+          required
+        />
+        <label for="phone2">POR EJEMPLO: +593 933 543 342</label>
+        <input
+          id="phone3"
+          type="tel"
+          name="phone"
+          placeholder="Ingrese su teléfono"
+          required
+        />
+        <button type="submit">DEJAR UNA SOLICITUD</button>
+      </form>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(".feedback").click(function () {
+          $(".popup-window").show();
+        });
+        $(".close-popup").click(function () {
+          $(".popup-window").hide();
+        });
+
+        function handleFormSubmit(formId, nameInputId, phoneInputId) {
+          $(formId).submit(function (event) {
+            event.preventDefault();
+            const name = $(nameInputId).val().trim();
+            const phone = $(phoneInputId).val().trim();
+            const namePattern = /^[A-Za-z\s]+$/;
+            const phonePattern = /^\+593\d{9}$/;
+
+            if (!name || !namePattern.test(name)) {
+              alert(
+                "Por favor, ingrese un nombre válido. Solo se permiten letras y espacios."
+              );
+              $(nameInputId).focus();
+              return false;
+            }
+
+            if (!phonePattern.test(phone)) {
+              alert(
+                "Por favor, ingrese un número de teléfono válido. Ejemplo: +593933543342"
+              );
+              $(phoneInputId).focus();
+              return false;
+            }
+
+            $.ajax({
+              url: "/submit",
+              method: "POST",
+              contentType: "application/json",
+              data: JSON.stringify({ name, phone }),
+              success: function (response) {
+                alert(
+                  "Sus datos fueron enviados y un agente se comunicará con usted dentro de 1 a 5 minutos."
+                );
+                $(formId)[0].reset(); // Limpiar el formulario
+                $(".popup-window").hide();
+              },
+              error: function (xhr, status, error) {
+                alert(
+                  "Error al enviar los datos. Por favor, inténtelo de nuevo."
+                );
+              },
+            });
+          });
+        }
+        // Manejar el envío de los formularios
+        handleFormSubmit("#dataForm", "#name", "#phone");
+        handleFormSubmit("#dataForm2", "#name2", "#phone2");
+        handleFormSubmit("#dataForm3", "#name3", "#phone3");
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function validateForm(form) {
+          const name = form.querySelector('input[name="name"]');
+          const phone = form.querySelector('input[name="phone"]');
+          const namePattern = /^[A-Za-z\s]+$/;
+          const phonePattern = /^\+593\d{9}$/;
+
+          if (!name.value.trim() || !namePattern.test(name.value.trim())) {
+            alert(
+              "Por favor, ingrese un nombre válido. Solo se permiten letras y espacios."
+            );
+            name.focus();
+            return false;
+          }
+
+          if (!phonePattern.test(phone.value.trim())) {
+            alert(
+              "Por favor, ingrese un número de teléfono válido. Ejemplo: +593933543342"
+            );
+            phone.focus();
+            return false;
+          }
+
+          return true;
+        }
+
+        const form1 = document.getElementById("dataForm");
+        const form2 = document.getElementById("dataForm2");
+
+        form1.addEventListener("submit", function (event) {
+          if (!validateForm(form1)) {
+            event.preventDefault();
+          }
+        });
+
+        form2.addEventListener("submit", function (event) {
+          if (!validateForm(form2)) {
+            event.preventDefault();
+          }
+        });
+      });
+    </script>
+    <!--contador-->
+    <script>
+      // Set the date we're counting down to
+var countDownDate = new Date("Dec 31, 2024 23:59:59").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function () {
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes, and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Format hours, minutes, and seconds for double digits
+  var hoursTens = Math.floor(hours / 10);
+  var hoursOnes = hours % 10;
+  var minutesTens = Math.floor(minutes / 10);
+  var minutesOnes = minutes % 10;
+  var secondsTens = Math.floor(seconds / 10);
+  var secondsOnes = seconds % 10;
+
+  // Update days
+  document.querySelector(".days").textContent = days + " días restantes";
+
+  // Update hours
+  document.querySelector(".hour0").textContent = hoursTens;
+  document.querySelector(".hour1").textContent = hoursOnes;
+
+  // Update minutes
+  document.querySelector(".min0").textContent = minutesTens;
+  document.querySelector(".min1").textContent = minutesOnes;
+
+  // Update seconds
+  document.querySelector(".sec0").textContent = secondsTens;
+  document.querySelector(".sec1").textContent = secondsOnes;
+
+  // If the countdown is over, show "EXPIRED"
+  if (distance < 0) {
+    clearInterval(x);
+    document.querySelector(".days").textContent = "PROMOCIÓN FINALIZADA";
+    document.querySelectorAll(".num").forEach((el) => (el.textContent = "-"));
+  }
+}, 1000);
+
+
+    </script>
+  </body>
+</html>
