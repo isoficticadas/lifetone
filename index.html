@@ -4,35 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lifetone</title>
-    <link rel="icon" href="img/Logo.png" type="image/x-icon" /> 
+    <link rel="icon" href="img/Logo.webp" type="image/x-icon" /> 
     <link href="/css/style.css" rel="stylesheet" />
-    <link href="/css/css2.css" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
      <!-- Facebook Pixel Code -->
-     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window,document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '1288489329009774');
-      fbq('track', 'PageView');
-      </script>
-      <noscript>
+    <script src="/js/facebook-pixel.js"></script>
+    <noscript>
       <img height="1" width="1"
       src="https://www.facebook.com/tr?id=1288489329009774&ev=PageView
       &noscript=1"/>
-      </noscript>
-      <!-- End Facebook Pixel Code -->
-  
+    </noscript>
+    <!-- End Facebook Pixel Code -->
   </head>
   <body>
     <header class="header">
       <div class="header__content content-width">
-        <img src="/img/Logo.png" alt="Logo" class="header__logo" />
+        <img src="/img/Logo.webp" alt="Logo" class="header__logo" />
         <h2 class="header__heading">
           ¡APRESÚRESE! PARA EL DÍA DE HOY, POCA UNIDADES EN PROMOCIÓN
         </h2>
@@ -48,7 +34,7 @@
         </h1>
         <div class="cream__product product-bg-container">
           <div class="product-bg"></div>
-          <img src="/img/cream-image.png" alt="LifeTone" class="cream__image" />
+          <img src="/img/cream-image.webp" alt="LifeTone" class="cream__image" />
         </div>
         <form
           id="dataForm2"
@@ -57,7 +43,7 @@
           action="/submit"
           method="POST"
         >
-          <img src="/img/discount.png" alt="discount" class="form__discount" />
+          <img src="/img/discount.webp" alt="discount" class="form__discount" />
           <div class="form__header">
             <p class="form__header-text">DESCUENTO DEL 50% EN SU PEDIDO</p>
           </div>
@@ -98,45 +84,17 @@
               type="tel"
             />
             <button type="submit" class="form__btn btn">HACER UN PEDIDO</button>
-          </div>
-          <div class="form__footer">
-            <p class="days">dias restantes</p>
-          <div class="timer">
-            <div class="time-container">
-              <span class="hour">
-                <span class="num hour0">-</span>
-                <span class="num hour1">-</span>
-              </span>
-              <span class="time-text">horas</span>
-            </div>
-            :
-            <div class="time-container">
-              <span class="minute">
-                <span class="num min0">-</span>
-                <span class="num min1">-</span>
-              </span>
-              <span class="time-text">minutos</span>
-            </div>
-            :
-            <div class="time-container">
-              <span class="second">
-                <span class="num sec0">-</span>
-                <span class="num sec1">-</span>
-              </span>
-              <span class="time-text">segundos</span>
-            </div>
-          </div>
-        </div>     
+          </div> 
         </form>
         <div>
           <img
             class="cream__decoration cream__decoration--1"
-            src="/img/cream-bg-1.png"
+            src="/img/cream-bg-1.webp"
             alt="water"
           />
           <img
             class="cream__decoration cream__decoration--2"
-            src="/img/cream-bg-2.png"
+            src="/img/cream-bg-2.webp"
             alt="water"
           />
         </div>
@@ -207,19 +165,19 @@
           </ul>
           <div class="changes__steps">
             <div class="changes__step">
-              <img src="/img/step1.png" alt="step1" class="changes__step" />
+              <img src="/img/step1.webp" alt="step1" class="changes__step" />
             </div>
-            <img src="/img/arrow-right.png" alt="arrow-right" />
+            <img src="/img/arrow-right.webp" alt="arrow-right" />
             <div class="changes__step">
-              <img src="/img/step2.png" alt="step2" class="changes__step" />
+              <img src="/img/step2.webp" alt="step2" class="changes__step" />
             </div>
-            <img src="/img/arrow-right.png" alt="arrow-right" />
+            <img src="/img/arrow-right.webp" alt="arrow-right" />
             <div class="changes__step">
-              <img src="/img/step3.png" alt="step3" class="changes__step" />
+              <img src="/img/step3.webp" alt="step3" class="changes__step" />
             </div>
           </div>
         </div>
-        <img src="/img/changes-bg.png" alt="woman" class="changes__bg-image" />
+        <img src="/img/changes-bg.webp" alt="woman" class="changes__bg-image" />
       </div>
     </section>
 
@@ -231,7 +189,7 @@
         <div class="effects__product product-bg-container">
           <div class="product-bg"></div>
           <img
-            src="/img/effects-image.png"
+            src="/img/effects-image.webp"
             alt="LifeTone"
             class="effects__image"
           />
@@ -277,7 +235,7 @@
         <ul class="components__list">
           <li class="component">
             <img
-              src="/img/comp1.jpg"
+              src="/img/comp1.webp"
               alt="NIACINAMIDA"
               class="component__image"
             />
@@ -290,7 +248,7 @@
             </div>
           </li>
           <li class="component">
-            <img src="/img/comp2.jpg" alt="RETINOL" class="component__image" />
+            <img src="/img/comp2.webp" alt="RETINOL" class="component__image" />
             <div class="component__content">
               <h3 class="component__heading">RETINOL</h3>
               <p class="component__text">
@@ -301,7 +259,7 @@
           </li>
           <li class="component">
             <img
-              src="/img/comp3.jpg"
+              src="/img/comp3.webp"
               alt="ÁCIDO HIALURÓNICO"
               class="component__image"
             />
@@ -314,7 +272,7 @@
             </div>
           </li>
           <li class="component">
-            <img src="/img/comp4.jpg" alt="COLÁGENO" class="component__image" />
+            <img src="/img/comp4.webp" alt="COLÁGENO" class="component__image" />
             <div class="component__content">
               <h3 class="component__heading">COLÁGENO</h3>
               <p class="component__text">
@@ -334,7 +292,7 @@
         </h2>
         <div class="shine__container">
           <div class="shine__left">
-            <img src="/img/shine-image.png" alt="woman" class="shine__image" />
+            <img src="/img/shine-image.webp" alt="woman" class="shine__image" />
             <div class="shine__list">
               <h3 class="shine__item">100% COMPOSICIÓN NATURAL</h3>
               <h3 class="shine__item">EFICACIA COMPROBADA</h3>
@@ -392,7 +350,7 @@
             hacia una piel perfecta hoy mismo.
           </h2>
         </div>
-        <img src="/img/order-bg.jpg" alt="woman" class="order__image" />
+        <img src="/img/order-bg.webp" alt="woman" class="order__image" />
       </div>
     </section>
 
@@ -414,18 +372,18 @@
           <a href="#dataForm" class="use__btn btn">HACER UN PEDIDO</a>
         </div>
         <div class="use__right">
-          <img src="/img/use-image.png" alt="LifeTone" class="use__image" />
+          <img src="/img/use-image.webp" alt="LifeTone" class="use__image" />
         </div>
       </div>
       <div>
         <img
           class="use__decoration use__decoration--1"
-          src="/img/cream-bg-1.png"
+          src="/img/cream-bg-1.webp"
           alt="water"
         />
         <img
           class="use__decoration use__decoration--2"
-          src="/img/cream-bg-2.png"
+          src="/img/cream-bg-2.webp"
           alt="water"
         />
       </div>
@@ -440,7 +398,7 @@
           action="/submit"
           method="POST"
         >
-          <img src="/img/discount.png" alt="discount" class="form__discount" />
+          <img src="/img/discount.webp" alt="discount" class="form__discount" />
           <div class="form__header">
             <p class="form__header-text">DESCUENTO DEL 50% EN SU PEDIDO</p>
           </div>
@@ -502,135 +460,9 @@
       </div>
     </footer>
 
-    <style>
-      html,
-      body {
-        scroll-behavior: smooth !important;
-      }
-    </style>
-    <style>
-      .feedback {
-        width: 75px;
-        height: 70px;
-        position: fixed;
-        right: -15px;
-        top: 15%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #039aae;
-        border-top-left-radius: 35px;
-        border-bottom-left-radius: 35px;
-        cursor: pointer;
-        z-index: 1000;
-        box-shadow: -2px 3px 11px rgb(0 0 0 / 30%);
-        transition: all 0.5s;
-      }
-      .feedback:hover {
-        right: 0;
-      }
-      .feedback img {
-        width: 50px;
-        height: 50px;
-      }
-      .popup-window {
-        font-family: sans-serif;
-        font-family: inherit;
-        display: none;
-        width: 300px;
-        position: fixed;
-        right: 0;
-        top: 15%;
-        padding: 35px 10px;
-        background: #fff;
-        border-radius: 5px 0 0 5px;
-        z-index: 2000;
-        box-shadow: -2px 3px 11px rgb(0 0 0 / 17%);
-      }
-      .popup-window form {
-        width: 100%;
-        min-height: auto;
-        padding: 0;
-        background: inherit;
-        box-shadow: none;
-        height: auto;
-      }
-      .popup-window label {
-        display: block;
-        margin-bottom: 5px;
-        font-size: 14px;
-        color: #333;
-        text-transform: uppercase;
-      }
-      .popup-window input {
-        box-sizing: border-box;
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-        padding: 10px;
-        border: none;
-        font-family: inherit;
-        font-size: 16px;
-        margin-bottom: 15px;
-        border: 1px solid #333;
-      }
-      .popup-window input::placeholder {
-        font-size: 16px;
-      }
-      .popup-window button {
-        width: 100%;
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        background: #039aae;
-        color: #ffffff;
-        cursor: pointer;
-        font-family: inherit;
-        font-size: 16px;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-top: 15px;
-        border-radius: 20px;
-      }
-      .close-popup {
-        position: absolute;
-        right: 10px;
-        top: 5px;
-        width: 27px;
-        height: 27px;
-        background-color: #fff;
-        cursor: pointer;
-      }
-      .close-popup:before {
-        content: "";
-        background: #333;
-        width: 20px;
-        height: 1px;
-        position: absolute;
-        top: 13px;
-        left: 4px;
-        transform: rotate(-45deg);
-      }
-      .close-popup:after {
-        content: "";
-        background: #333;
-        width: 20px;
-        height: 1px;
-        position: absolute;
-        top: 13px;
-        left: 4px;
-        transform: rotate(45deg);
-      }
-      @media screen and (max-width: 576px) {
-        .feedback {
-          top: 35%;
-        }
-        .popup-window {
-          top: 35%;
-        }
-      }
-    </style>
-    <div class="feedback"><img src="img/form-ico.png" alt="" /></div>
+    <div class="feedback">
+      <img src="img/form-ico.webp" alt="" />
+    </div>
     <div class="popup-window" style="display: none">
       <div class="close-popup"></div>
       <form
@@ -640,7 +472,7 @@
         action="/submit"
         method="POST"
       >
-        <label for="name2">POR EJEMPLO: MARÍA LOPEZ</label>
+        <label for="name3">POR EJEMPLO: MARÍA LOPEZ</label>
         <input
           id="name3"
           type="text"
@@ -648,7 +480,7 @@
           placeholder="Alejandro Rodriguez"
           required
         />
-        <label for="phone2">POR EJEMPLO: +593 933 543 342</label>
+        <label for="phone3">POR EJEMPLO: +593 933 543 342</label>
         <input
           id="phone3"
           type="tel"
@@ -658,160 +490,7 @@
         />
         <button type="submit">DEJAR UNA SOLICITUD</button>
       </form>
-    </div>
-    <script>
-      $(document).ready(function () {
-        $(".feedback").click(function () {
-          $(".popup-window").show();
-        });
-        $(".close-popup").click(function () {
-          $(".popup-window").hide();
-        });
-
-        function handleFormSubmit(formId, nameInputId, phoneInputId) {
-          $(formId).submit(function (event) {
-            event.preventDefault();
-            const name = $(nameInputId).val().trim();
-            const phone = $(phoneInputId).val().trim();
-            const namePattern = /^[A-Za-z\s]+$/;
-            const phonePattern = /^\+593\d{9}$/;
-
-            if (!name || !namePattern.test(name)) {
-              alert(
-                "Por favor, ingrese un nombre válido. Solo se permiten letras y espacios."
-              );
-              $(nameInputId).focus();
-              return false;
-            }
-
-            if (!phonePattern.test(phone)) {
-              alert(
-                "Por favor, ingrese un número de teléfono válido. Ejemplo: +593933543342"
-              );
-              $(phoneInputId).focus();
-              return false;
-            }
-
-            $.ajax({
-              url: "/submit",
-              method: "POST",
-              contentType: "application/json",
-              data: JSON.stringify({ name, phone }),
-              success: function (response) {
-                alert(
-                  "Sus datos fueron enviados y un agente se comunicará con usted dentro de 1 a 5 minutos."
-                );
-                $(formId)[0].reset(); // Limpiar el formulario
-                $(".popup-window").hide();
-              },
-              error: function (xhr, status, error) {
-                alert(
-                  "Error al enviar los datos. Por favor, inténtelo de nuevo."
-                );
-              },
-            });
-          });
-        }
-        // Manejar el envío de los formularios
-        handleFormSubmit("#dataForm", "#name", "#phone");
-        handleFormSubmit("#dataForm2", "#name2", "#phone2");
-        handleFormSubmit("#dataForm3", "#name3", "#phone3");
-      });
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        function validateForm(form) {
-          const name = form.querySelector('input[name="name"]');
-          const phone = form.querySelector('input[name="phone"]');
-          const namePattern = /^[A-Za-z\s]+$/;
-          const phonePattern = /^\+593\d{9}$/;
-
-          if (!name.value.trim() || !namePattern.test(name.value.trim())) {
-            alert(
-              "Por favor, ingrese un nombre válido. Solo se permiten letras y espacios."
-            );
-            name.focus();
-            return false;
-          }
-
-          if (!phonePattern.test(phone.value.trim())) {
-            alert(
-              "Por favor, ingrese un número de teléfono válido. Ejemplo: +593933543342"
-            );
-            phone.focus();
-            return false;
-          }
-
-          return true;
-        }
-
-        const form1 = document.getElementById("dataForm");
-        const form2 = document.getElementById("dataForm2");
-
-        form1.addEventListener("submit", function (event) {
-          if (!validateForm(form1)) {
-            event.preventDefault();
-          }
-        });
-
-        form2.addEventListener("submit", function (event) {
-          if (!validateForm(form2)) {
-            event.preventDefault();
-          }
-        });
-      });
-    </script>
-    <!--contador-->
-    <script>
-      // Set the date we're counting down to
-var countDownDate = new Date("Dec 31, 2024 23:59:59").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function () {
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes, and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Format hours, minutes, and seconds for double digits
-  var hoursTens = Math.floor(hours / 10);
-  var hoursOnes = hours % 10;
-  var minutesTens = Math.floor(minutes / 10);
-  var minutesOnes = minutes % 10;
-  var secondsTens = Math.floor(seconds / 10);
-  var secondsOnes = seconds % 10;
-
-  // Update days
-  document.querySelector(".days").textContent = days + " días restantes";
-
-  // Update hours
-  document.querySelector(".hour0").textContent = hoursTens;
-  document.querySelector(".hour1").textContent = hoursOnes;
-
-  // Update minutes
-  document.querySelector(".min0").textContent = minutesTens;
-  document.querySelector(".min1").textContent = minutesOnes;
-
-  // Update seconds
-  document.querySelector(".sec0").textContent = secondsTens;
-  document.querySelector(".sec1").textContent = secondsOnes;
-
-  // If the countdown is over, show "EXPIRED"
-  if (distance < 0) {
-    clearInterval(x);
-    document.querySelector(".days").textContent = "PROMOCIÓN FINALIZADA";
-    document.querySelectorAll(".num").forEach((el) => (el.textContent = "-"));
-  }
-}, 1000);
-
-
-    </script>
+    </div>    
+    <script src="/js/script.js"></script>
   </body>
 </html>
