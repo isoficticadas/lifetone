@@ -1406,11 +1406,13 @@ h3 {
   width: 50px;
   height: 50px;
 }
+
+
 .popup-window {
   font-family: sans-serif;
   font-family: inherit;
   display: none;
-  width: 300px;
+  max-width: 300px;
   position: fixed;
   right: 0;
   top: 15%;
@@ -1420,6 +1422,7 @@ h3 {
   z-index: 2000;
   box-shadow: -2px 3px 11px rgb(0 0 0 / 17%);
 }
+
 .popup-window form {
   width: 100%;
   min-height: auto;
@@ -1494,11 +1497,32 @@ h3 {
   left: 4px;
   transform: rotate(45deg);
 }
-@media screen and (max-width: 576px) {
+
+@media screen and (max-width: 480px) {
   .feedback {
-    top: 35%;
+    /* Si quieres que el botón sea más pequeño en móvil: */
+    width: 70px;
+    height: 70px;
+    top: 35%; /* O ajusta a tu gusto */
   }
+
   .popup-window {
-    top: 35%;
+    width: 100%;
+    right: 0%;
+    top: 50%;
+    padding: 40px 15px;
   }
+
+  .close-popup {
+    right: 10px;
+    top: -17rem;
+    z-index: 1000;
+  }
+
+  .popup-window form {
+    padding: 25px;
+  }
+
 }
+
+
